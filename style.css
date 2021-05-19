@@ -13,6 +13,13 @@
   --heading-stats: hsl(0, 0%, 100%);
   --main-paragraph: hsla(0, 0%, 100%, 0.75);
   --stat-headings: hsla(0, 0%, 100%, 0.6);
+  /* font size*/
+  --font-size: 15px;
+}
+
+.flex-by-column {
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -22,25 +29,14 @@ body {
   background-color: var(--main-background-color);
 }
 
-img#desktop {
-  position: absolute;
-  opacity: 60%;
-  top: -24px;
-  left: 177px;
-  /* border: 1px red solid; */
-}
-
-img#mobile {
-
-}
-main {
+#card-page {
   display: flex;
   justify-content: center;
-  height: 445px;
+  margin: 150px 0;
   border-radius: 7px;
+  height: 445px;
   overflow: hidden;
   margin: 150px 0;
-  border: 1px red solid;
 }
 
 .card.info {
@@ -51,7 +47,7 @@ main {
   background-color: var(--card-background-color);
   color: hsl(0, 0%, 100%);
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: var(--font-size);
 
 }
 .card.info h1 {
@@ -77,6 +73,7 @@ main {
 }
 .card.info .stat h2 {
   font-family: 'Inter', sans-serif;
+  text-transform: none;
 }
 .card.info .stat p{
   font-family: 'Lexend Deca', sans-serif;
@@ -96,10 +93,10 @@ main {
 
 /* For mobile */
 @media (max-width: 1142px) {
-  main {
-    display: flex;
+  #card-page {
     flex-direction: column-reverse;
     width: 330px;
+    height: auto;
     margin-top: 10%;
   }
 
@@ -109,28 +106,26 @@ main {
   
   .card.image {
     height: 240px;
+    background-image: url("./images/image-header-mobile.jpg");
+    background-size: contain;
   }
 
   .card.info {
     width: auto;
     height: 540px;
-    padding: 10%;
+    padding: 12% 10%;
   }
   .card.info h1 {
     font-size: 1.7rem;
-    font-weight: 600;
-  }
-  .card.info p {
-    margin-top: 7%;
   }
   .card.info .stats {
     flex-direction: column;
     margin-top: 5%;
   }
   .card.info .stat {
-    margin: 8% 0 0;
+    margin: 10% 0 0;
   }
   .card.info .stat p {
-    margin-top: 3%;
+    margin-top: 5px;
   }
 }
