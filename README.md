@@ -48,8 +48,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Media queries: use to apply styles conditionally
@@ -83,5 +81,3 @@ Didn't focus on Mobile-first workflow
 ## Author
 
 - Frontend Mentor - [@linhvoyo](https://www.frontendmentor.io/profile/linhvoyo)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
