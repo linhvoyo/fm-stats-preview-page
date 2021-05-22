@@ -32,11 +32,10 @@ body {
 #card-page {
   display: flex;
   justify-content: center;
-  margin: 150px 0;
+  margin: 180px 0;
   border-radius: 7px;
   height: 445px;
   overflow: hidden;
-  margin: 150px 0;
 }
 
 .card.info {
